@@ -1,0 +1,192 @@
+body {
+  min-height: 100vh;
+  padding: 3vh 10vh 6em;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1em;
+  color: #262626;
+  background-color: #f2f3f5;
+  background: url(background.jpg) center / cover no-repeat #ffffff;
+}
+@media only screen and (max-width : 768px) {
+  body {
+    padding: 1em 1em 4em;
+  }
+}
+
+div {
+  box-sizing: border-box;
+}
+
+h1, h3 {
+  display: inline-block;
+  font-family: monospace;
+  line-height: 1.2em;
+}
+
+h2 {
+  line-height: 1.2em;
+}
+
+.logo {
+  height: 10em;
+}
+
+@media only screen and (max-width : 768px) {
+  .logo {
+    height: 5em;
+  }
+}
+
+.left-column {
+  float: left;
+  padding-right: 1em;
+  width: 50%;
+}
+
+.right-column {
+  float: right;
+  padding-left: 1em;
+  width: 50%;
+}
+
+@media only screen and (max-width : 768px) {
+  .left-column, .right-column {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+footer {
+  border: 1px solid #cccccc;
+  padding: 1em;
+  text-align: center;
+  background-color: #B0A397;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+
+a {
+  vertical-align: super;
+}
+
+a[href^="https:"] {
+  padding-left: 3px;
+  background-image: url(google.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+a[href^="tel"] {
+  padding-right: 1.4em;
+  background-image: url(telephone.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+a[href^="mailto:"] {
+  padding-right: 1.4em;
+  background-image: url(email.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.snitch {
+  height: 3em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+
+}
+
+#nav {
+  position: relative;
+  font: 1em/2em Verdana, Helvetica sans-serif;
+  border: 2px double #997a8d;
+  float: right;
+  padding: 0 1em;
+}
+
+#navlist a:hover {
+  list-style: none;
+  margin: 4px;
+  padding: 2px 5px 3px 3px;
+  background: #997a7e;
+}
+
+#navlist li {
+  background-repeat: no-repeat;
+  list-style-image: url(harry.png);
+  border-bottom: 1px solid #777696;
+}
+
+table {
+  text-align: center;
+  border-collapse:collapse;
+  border: 2.5px solid #007473;
+}
+
+thead th {
+  font-size: 1.2em;
+  padding: 0.5em;
+  background-color: #708090;
+}
+
+thead th:hover {
+  background-color: #740001;
+  color: #fff;
+}
+
+th, td {
+  padding: 10px 5px 4px 5px;
+  border-bottom: 1px solid #b2cccc;
+}
+
+tr {
+  vertical-align: baseline;
+}
+
+th {
+  font-size: 1.2em;
+}
+
+td {
+  font-size: 1em;
+}
+
+tbody td:nth-child(odd) {
+  background-color: #a7adba;
+}
+
+tbody td:nth-child(even) {
+  background-color: #baa7ad;
+}
+
+.column-period {
+  background-color: #935a5e;
+}
+
+tfoot {
+  line-height: 1.2em;
+  width: 100%;
+  font-size: 1em;
+  color: 	#4f5b66;
+  background-color: #a7b7ba;
+  font-style: italic;
+  text-align: center;
+}
+
+.content-container:after {
+  display: table;
+  content: "";
+  clear: both;
+}
